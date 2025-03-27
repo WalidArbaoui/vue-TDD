@@ -1,3 +1,14 @@
-<template></template>
-
-<script></script>
+<script>
+defineProps({
+  id,
+  name,
+  description,
+  price,
+  category,
+  rating,
+  inventory,
+  images,
+  features,
+  colors,
+});
+</script>
