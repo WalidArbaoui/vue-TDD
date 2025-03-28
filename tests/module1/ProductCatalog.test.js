@@ -18,10 +18,9 @@ describe("ProductCatalog.vue", () => {
       useProductStore;
 
     try {
-      ProductCatalog = (await import("../../src/components/ProductCatalog.vue"))
+      ProductCatalog = (await import("@/components/ProductCatalog.vue"))
         .default;
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail(
         "Required components or store not found. Make sure to create all required files."
@@ -67,10 +66,9 @@ describe("ProductCatalog.vue", () => {
     let ProductCatalog, useProductStore;
 
     try {
-      ProductCatalog = (await import("../../src/components/ProductCatalog.vue"))
+      ProductCatalog = (await import("@/components/ProductCatalog.vue"))
         .default;
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail(
         "Required components or store not found. Make sure to create all required files."
@@ -113,12 +111,10 @@ describe("ProductCatalog.vue", () => {
     let ProductCatalog, ProductFilter, useProductStore;
 
     try {
-      ProductCatalog = (await import("../../src/components/ProductCatalog.vue"))
+      ProductCatalog = (await import("@/components/ProductCatalog.vue"))
         .default;
-      ProductFilter = (await import("../../src/components/ProductFilter.vue"))
-        .default;
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      ProductFilter = (await import("@/components/ProductFilter.vue")).default;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail(
         "Required components or store not found. Make sure to create all required files."
@@ -157,12 +153,10 @@ describe("ProductCatalog.vue", () => {
     let ProductCatalog, ProductFilter, useProductStore;
 
     try {
-      ProductCatalog = (await import("../../src/components/ProductCatalog.vue"))
+      ProductCatalog = (await import("@/components/ProductCatalog.vue"))
         .default;
-      ProductFilter = (await import("../../src/components/ProductFilter.vue"))
-        .default;
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      ProductFilter = (await import("@/components/ProductFilter.vue")).default;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail(
         "Required components or store not found. Make sure to create all required files."
@@ -201,12 +195,10 @@ describe("ProductCatalog.vue", () => {
     let ProductCatalog, ProductSort, useProductStore;
 
     try {
-      ProductCatalog = (await import("../../src/components/ProductCatalog.vue"))
+      ProductCatalog = (await import("@/components/ProductCatalog.vue"))
         .default;
-      ProductSort = (await import("../../src/components/ProductSort.vue"))
-        .default;
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      ProductSort = (await import("@/components/ProductSort.vue")).default;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail(
         "Required components or store not found. Make sure to create all required files."

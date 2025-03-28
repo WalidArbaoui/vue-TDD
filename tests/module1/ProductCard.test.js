@@ -9,8 +9,7 @@ describe("ProductCard.vue", () => {
     // Dynamic import to allow the test to run even if file doesn't exist yet
     let ProductCard;
     try {
-      ProductCard = (await import("../../src/components/ProductCard.vue"))
-        .default;
+      ProductCard = (await import("@/components/ProductCard.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductCard.vue component not found. Create this component first."
@@ -46,8 +45,7 @@ describe("ProductCard.vue", () => {
   it("emits an add-to-cart event when button is clicked", async () => {
     let ProductCard;
     try {
-      ProductCard = (await import("../../src/components/ProductCard.vue"))
-        .default;
+      ProductCard = (await import("@/components/ProductCard.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductCard.vue component not found. Create this component first."

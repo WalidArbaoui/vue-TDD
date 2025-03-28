@@ -5,8 +5,7 @@ describe("ProductSort.vue", () => {
   it("renders all sort options correctly", async () => {
     let ProductSort;
     try {
-      ProductSort = (await import("../../src/components/ProductSort.vue"))
-        .default;
+      ProductSort = (await import("@/components/ProductSort.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductSort.vue component not found. Create this component first."
@@ -34,8 +33,7 @@ describe("ProductSort.vue", () => {
   it("emits sort-change event when sort option is selected", async () => {
     let ProductSort;
     try {
-      ProductSort = (await import("../../src/components/ProductSort.vue"))
-        .default;
+      ProductSort = (await import("@/components/ProductSort.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductSort.vue component not found. Create this component first."
@@ -66,8 +64,7 @@ describe("ProductSort.vue", () => {
   it("highlights the currently selected sort option", async () => {
     let ProductSort;
     try {
-      ProductSort = (await import("../../src/components/ProductSort.vue"))
-        .default;
+      ProductSort = (await import("@/components/ProductSort.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductSort.vue component not found. Create this component first."

@@ -11,7 +11,7 @@ describe("Cart Store", () => {
   it("initializes with empty cart", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -27,7 +27,7 @@ describe("Cart Store", () => {
   it("adds a product to the cart", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -48,7 +48,7 @@ describe("Cart Store", () => {
   it("increases quantity when adding the same product again", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -70,7 +70,7 @@ describe("Cart Store", () => {
   it("updates the quantity of a product in the cart", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -92,7 +92,7 @@ describe("Cart Store", () => {
   it("removes a product from the cart", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -116,7 +116,7 @@ describe("Cart Store", () => {
   it("clears the entire cart", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -138,7 +138,7 @@ describe("Cart Store", () => {
   it("calculates subtotal correctly", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -159,7 +159,7 @@ describe("Cart Store", () => {
   it("calculates tax correctly (8% of subtotal)", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }
@@ -177,7 +177,7 @@ describe("Cart Store", () => {
   it("calculates grand total correctly (subtotal + tax)", async () => {
     let useCartStore;
     try {
-      useCartStore = (await import("../../src/stores/cartStore")).useCartStore;
+      useCartStore = (await import("@/stores/cartStore")).useCartStore;
     } catch (e) {
       expect.fail("Cart store not found. Create the store first.");
     }

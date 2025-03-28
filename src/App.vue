@@ -1,3 +1,7 @@
+<script setup>
+import ProductCatalog from "./components/ProductCatalog.vue";
+</script>
+
 <template>
   <div class="app-container">
     <header>
@@ -13,8 +17,6 @@
     </footer>
   </div>
 </template>
-
-<script setup></script>
 
 <style>
 * {

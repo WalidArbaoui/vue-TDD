@@ -11,8 +11,7 @@ describe("Product Store", () => {
   it("initializes with correct state", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }
@@ -29,8 +28,7 @@ describe("Product Store", () => {
   it("filters products by category", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }
@@ -59,8 +57,7 @@ describe("Product Store", () => {
   it("filters products by search query", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }
@@ -85,8 +82,7 @@ describe("Product Store", () => {
   it("sorts products by price (low to high)", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }
@@ -107,8 +103,7 @@ describe("Product Store", () => {
   it("sorts products by price (high to low)", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }
@@ -129,8 +124,7 @@ describe("Product Store", () => {
   it("sorts products by rating (high to low)", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }
@@ -151,8 +145,7 @@ describe("Product Store", () => {
   it("combines filtering and sorting correctly", async () => {
     let useProductStore;
     try {
-      useProductStore = (await import("../../src/stores/productStore"))
-        .useProductStore;
+      useProductStore = (await import("@/stores/productStore")).useProductStore;
     } catch (e) {
       expect.fail("Product store not found. Create the store first.");
     }

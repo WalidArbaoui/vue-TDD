@@ -6,9 +6,10 @@ describe("ProductFilter.vue", () => {
   it("renders all categories correctly", async () => {
     let ProductFilter;
     try {
-      ProductFilter = (await import("../../src/components/ProductFilter.vue"))
-        .default;
+      ProductFilter = (await import("@/components/ProductFilter.vue")).default;
     } catch (e) {
+      console.error("Import error:", e.message);
+
       expect.fail(
         "ProductFilter.vue component not found. Create this component first."
       );
@@ -33,8 +34,7 @@ describe("ProductFilter.vue", () => {
   it("emits category-change event when category is selected", async () => {
     let ProductFilter;
     try {
-      ProductFilter = (await import("../../src/components/ProductFilter.vue"))
-        .default;
+      ProductFilter = (await import("@/components/ProductFilter.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductFilter.vue component not found. Create this component first."
@@ -66,8 +66,7 @@ describe("ProductFilter.vue", () => {
   it("emits search-change event when search input changes", async () => {
     let ProductFilter;
     try {
-      ProductFilter = (await import("../../src/components/ProductFilter.vue"))
-        .default;
+      ProductFilter = (await import("@/components/ProductFilter.vue")).default;
     } catch (e) {
       expect.fail(
         "ProductFilter.vue component not found. Create this component first."
